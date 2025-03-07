@@ -1,0 +1,147 @@
+:root {
+    --primary: #1D2944;
+    --primaryt: #1D2944CC;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    color: var(--white);
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("images/bg.jpg");*/
+    background-color: var(--primary);
+    background-size: 100vw;
+    background-repeat: repeat-y;
+}
+
+p {
+    text-align: justify;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -999;
+    filter: invert(1);
+}
+
+main div {
+    width: 100%;
+}
+
+.hero {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--primaryt);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    display: flex;
+    width: fit-content;
+    font-size: calc(1rem + 2vw);
+}
+
+#logo {
+    width: calc(10rem + 8vw);
+}
+
+
+.muro {
+    padding: 120px 15%;
+    width: 100%;
+    height: fit-content;
+    background-color: #2e3a5a;
+}
+
+.post {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.foto, .foto img {
+    width: 100%;
+    min-width: 250px;
+}
+
+.foto img {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.leyenda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.persona {
+    text-align: end;
+    color: #ddd;
+}
+
+.titulo {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.divider {
+    margin: 60px 0;
+    border-top: 1px solid var(--white);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .muro {
+        padding: 80px 10%;
+    }
+    .divider {
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .muro {
+        padding: 60px 5%;
+    }
+    .post {
+        display: flex;
+        flex-direction: column;
+    }
+    .divider {
+        margin: 30px 0;
+    }
+}
