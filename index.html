@@ -1,66 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CID GALLUP</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sorteo de Bancos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main>
-        <img src="images/bg.png" class="bg" alt="">
-        <section class="hero">
-            <div class="hero-content">
-                <h1>
-                    Yo soy
-                </h1>
-                <img src="images/logo.png" id="logo" alt="">
-            </div>
-        </section>
-        <section class="muro">
-            <!--CONTENIDO IZQUIERDA-->
-            <div class="postl">
-                <div class="foto">
-                    <img src="images/post1.jpeg" alt="">
-                </div>
-                <div class="leyenda">
-                    <div>
-                        <p class="titulo">
-                            2023
-                        </p>
-                        <p>
-                            Una anécdota que recuerdo con mucha alegría fue haber celebrado la etnia negra junto con Don Carlos que nos visito nos vestimos acorde la fecha degustamos platillos afroantillanos  y fue una tarde muy cultural como equipo.  
-                        </p>
-                    </div>
-                    <p class="persona">
-                        - Panamá
-                    </p>
-                </div>
-            </div>
-            <!--FIN DE CONTENIDO-->
-            <div class="divider"></div>
-            <!--CONTENIDO DERECHA-->
-            <div class="postr">
-                <div class="leyenda">
-                    <div>
-                        <p class="titulo">
-                            2023
-                        </p>
-                        <p>
-                            Una anécdota que recuerdo con mucha alegría fue haber celebrado la etnia negra junto con Don Carlos que nos visito nos vestimos acorde la fecha degustamos platillos afroantillanos  y fue una tarde muy cultural como equipo.  
-                        </p>
-                    </div>
-                    <p class="persona">
-                        - Panamá
-                    </p>
-                </div>
-                <div class="foto">
-                    <img src="images/post1.jpeg" alt="">
-                </div>
-            </div>
-            <!--FIN DE CONTENIDO-->
-            <div class="divider"></div>
-        </section>
-    </main>
+  <main class="shell">
+    
+
+    <section class="hero">
+        <header class="topbar">
+      <div class="logo">
+        <img src="Logo.png" alt="">
+      </div>
+    </header>
+      <br>
+      <div class="panel glass">
+      <div class="brand">
+        <h1>Sorteo aleatorio de Bancos</h1>
+      </div>
+        <div class="display">
+          <span id="bankName" class="name">—</span>
+          <span id="winnerTag" class="winner-tag">Ganador</span>
+        </div>
+        
+        <div class="controls">
+          <button id="startBtn" class="cta" type="button">Iniciar selección</button>
+        </div>
+        <br>
+        <div class="progress-wrap">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
